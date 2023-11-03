@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS STYLE -->
+    <link rel="stylesheet" href="style/global.css" />
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Tailwind Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Config -->
+    <script src="tailwind.config.js"></script>
+    <!-- Flowbite CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <!-- Title -->
+    <title>Portfolio</title>
+</head>
+<body id="start" class="bg-rich-black font-kanit">
+    <!-- Navbar -->
+    <nav id="navbar" class="xl:hidden flex flex-row w-full px-3 py-3 bg-dark-jungle-green border-b border-charcoal">
+        <!-- Logo -->
+        <div id="logo" class="flex flex-row justify-center text-sm md:text-xl cursor-default">
+            <h1 class="text-infra-red">L</h1>
+            <h1 class="text-gold">Z</h1>
+            <h1 class="text-caribbean-green">X</h1>
+        </div>
+    </nav>
+    <div class="flex flex-row bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-infra-red2 from-5% via-dark-jungle-green via-60% to-rich-black to-100%">
+        <!-- Side Nav -->
+        <nav id="sidebar" class="hidden xl:inline-flex flex flex-col item-center pt-8 h-screen w-[5%] fixed bg-dark-jungle-green border-r-2 border-charcoal">
+            <!-- Logo -->
+            <div id="logo" class="flex flex-row justify-center text-2xl cursor-default">
+                <h1 class="text-infra-red">L</h1>
+                <h1 class="text-gold">Z</h1>
+                <h1 class="text-caribbean-green">X</h1>
+            </div>
+            <!-- Menu -->
+            <div id="menu" class="flex items-end justify-center pb-4 h-full text-center">
+                <!-- Start Home Menu -->
+                <button data-tooltip-target="tooltip-home" data-tooltip-placement="right" type="button">
+                    <a href="#start"><i class=" material-icons text-charcoal hover:text-lavender-gray duration-300 text-4xl cursor-pointer">home</i></a>
+                </button>
+                <div id="tooltip-home" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-lavender-gray bg-dark-jungle-green rounded-lg shadow-sm opacity-0 tooltip">
+                    Home
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <!-- End Home Menu-->
+            </div>
+        </nav>
+        <!-- Content -->
+        <main id="content" class="flex flex-col pt-8 px-3 xl:pr-[4%] xl:pl-[8%] w-full text-lavender-gray">
+            <div id="home" class="flex flex-col gap-x-2 h-screen ">
+                <div class="hidden xl:inline-flex flex justify-end space-x-2">
+                    <a href="#introducing">
+                        <button class="py-3 bg-rich-black px-8 border-2 border-charcoal rounded-3xl duration-300 shadow-md shadow-rich-black hover:border-infra-red  hover:bg-dark-jungle-green">
+                            Explore
+                        </button>
+                    </a>
+                    <a href="https://github.com/LolazyX" target="_blank">
+                        <button class="group flex items-center text-rich-black py-3 bg-infra-red px-8 border-2 border-infra-red rounded-3xl duration-300 shadow-md shadow-rich-black hover:border-white hover:bg-white ">
+                            Github
+                            <i class="material-icons text-rich-black ml-2 text-md group-hover:translate-x-2 duration-300">
+                                keyboard_double_arrow_right
+                            </i>
+                        </button>
+                    </a>
+                </div>
+                <div class="flex flex-col">
+                    <div>
+                        <div class="mt-10 md:mt-14 xl:mt-8 mb-12 p-4  flex justify-center">
+                            <h1 class="text-md md:text-xl xl:text-2xl font-semibold">
+                                Let's play!
+                            </h1>
+                        </div>
+                        <div class="xl:p-4 py-10 flex justify-center">
+                            <table class="select-none ">
+                                <tr class="flex text-xs md:text-xl xl:text-4xl">
+                                    <th id="a1" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="a2" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="a3" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="a4" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="a5" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="a6" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="a7" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="a8" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="a9" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="a10" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="a11" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="a12" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="a13" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                </tr>
+                                <tr class="flex text-xs md:text-xl xl:text-4xl">
+                                    <th id="b1" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="b2" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="b3" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="b4" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="b5" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="b6" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="b7" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="b8" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="b9" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="b10" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="b11" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="b12" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="b13" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                </tr>
+                                <tr class="flex text-xs md:text-xl xl:text-4xl">
+                                    <th id="c1" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="c2" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="c3" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="c4" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="c5" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="c6" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="c7" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="c8" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="c9" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="c10" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="c11" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="c12" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="c13" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                </tr>
+                                <tr class="flex text-xs md:text-xl xl:text-4xl">
+                                    <th id="d1" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="d2" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="d3" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="d4" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="d5" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="d6" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="d7" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="d8" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="d9" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="d10" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="d11" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="d12" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                    <th id="d13" class="p-2 w-7 md:p-3 md:w-14 xl:p-6 xl:w-20 border lg:border-2 border-opacity-rgba">ㅤ</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="xl:hidden pt-16 md:pt-26 flex justify-center mt-2 space-x-2">
+                            <a href="#introducing">
+                                <button class="text-md md:text-xl xl:text-2xl py-3 bg-rich-black px-8 border-2 border-charcoal rounded-3xl duration-300 shadow-md shadow-rich-black hover:border-infra-red  hover:bg-dark-jungle-green">
+                                    Explore
+                                </button>
+                            </a>
+                            <a href="https://github.com/LolazyX" target="_blank">
+                                <button class="text-md md:text-xl xl:text-2xl  group flex items-center text-rich-black py-3 bg-infra-red px-8 border-2 border-infra-red rounded-3xl duration-300 shadow-md shadow-rich-black hover:border-white hover:bg-white ">
+                                    Github
+                                    <i class="material-icons text-rich-black ml-2 text-md group-hover:translate-x-2 duration-300">
+                                        keyboard_double_arrow_right
+                                    </i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="flex justify-center pt-12 md:pt-20 xl:pt-12">
+                            <a href="#introducing">
+                                <i class="material-icons animate-bounce  text-infra-red hover:text-white duration-300 text-4xl cursor-pointer">
+                                    keyboard_double_arrow_down
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="introducing" class="flex justify-center h-screen items-center">
+                2
+            </div>
+            <div class="flex justify-center h-screen items-center">
+                3
+            </div>
+        </main>
+    </div>
+</body>
+    <!-- Text Script -->
+    <script src="script/wordmation.js"></script>
+</html>
