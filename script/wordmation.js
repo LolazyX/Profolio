@@ -104,7 +104,6 @@ const looptest = async () => {
         }
         await sleep(5000);
         clearClass();
-        console.log(i);
         if ( i == (word.length - 1) ) i = -1;
     }
 }
