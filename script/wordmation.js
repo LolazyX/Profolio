@@ -64,7 +64,7 @@ const clearClass = () => {
                 let id = `${letter}${k+1}`;
                 document.getElementById(id).classList.add("border-opacity-rgba");
                 document.getElementById(id).classList.remove("shadow-inner");
-                document.getElementById(id).classList.remove("border-charcoal");
+                document.getElementById(id).classList.remove("border-infra-red");
                 document.getElementById(id).classList.remove("text-infra-red");
                 document.getElementById(id).classList.remove("text-gold");
                 document.getElementById(id).classList.remove("text-caribbean-green");
@@ -84,7 +84,7 @@ const looptest = async () => {
                     let id = `${letter}${k+1}`;
                     document.getElementById(id).classList.remove("border-opacity-rgba");
                     document.getElementById(id).classList.add("shadow-inner");
-                    document.getElementById(id).classList.add("border-charcoal");
+                    document.getElementById(id).classList.add("border-infra-red");
                     document.getElementById(id).classList.add("text-charcoal");
                     document.getElementById(id).innerHTML = randomCharecter();
                     await sleep(60)
