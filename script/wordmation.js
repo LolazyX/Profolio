@@ -38,13 +38,17 @@ const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-const randomCharecter = () => {
+const randomCharecter = (noRandom) => {
     let result = '';
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let counter = 0;
     while (counter < 1) {
-      result += characters.charAt(Math.floor(Math.random() * characters.length));
-      counter += 1;
+      result = characters.charAt(Math.floor(Math.random() * characters.length));
+      if (result == noRandom) {
+        counter = 0;
+      } else {
+        counter++;
+      }
     }
     return result;
 }
@@ -65,6 +69,77 @@ const add_style = () => {
         }
     });
 }
+
+const waitRamdom = (id, noRandom) => {
+    return new Promise(async resolve => {
+        let element = document.getElementById(id).innerText;
+        while ( element != noRandom ) {
+            element = document.getElementById(id).innerText
+            document.getElementById(id).innerHTML = randomCharecter(noRandom);
+            await sleep(50)
+        }
+        document.getElementById(id).innerHTML = noRandom;
+ 
+    });
+}
+
+const wordmation = async () => { 
+    for (let i = 0; i < word.length; i++) {
+        for (let j = 0; j < word[i].length; j++) {
+            let letter;
+            j == 0 ? letter = 'a' : j == 1 ? letter = 'b' : j == 2 ? letter = 'c' : j == 3 ? letter = 'd': j = 4;
+            for (let k = 0; k < word[i][j].length; k++) {
+                if (word[i][j][k] != " ") {
+                    let id = `${letter}${k+1}`;
+                    document.getElementById(id).classList.remove("border-opacity-rgba");
+                    document.getElementById(id).classList.add("bg-rich-black", "shadow-inner", "border-infra-red", "text-dark-jungle-green");
+                    waitRamdom(id, word[i][j][k]);
+                    await sleep(20);
+                }
+            }
+        }
+        for (let j = 0; j < word[i].length; j++) {
+            let letter;
+            j == 0 ? letter = 'a' : j == 1 ? letter = 'b' : j == 2 ? letter = 'c' : j == 3 ? letter = 'd': j = 4;
+            for (let k = 0; k < word[i][j].length; k++) {
+                if (word[i][j][k] != " ") {
+                    let id = `${letter}${k+1}`;
+                    document.getElementById(id).classList.remove("text-dark-jungle-green");
+                    if (word[i][j][k] == "▶" || word[i][j][k] == "!" || word[i][j][k] == "X" || word[i][j][k] == "★" || word[i][j][k] == "●") {
+                        let color = `text-${randomColor()}`;
+                        document.getElementById(id).classList.add(color);
+                    }
+                    document.getElementById(id).innerHTML = word[i][j][k];
+                    await sleep(40)
+                }
+            }
+        }
+        await sleep(8000);
+        clearClass();
+        if ( i == (word.length - 1) ) i = -1;
+    }
+}
+
+const clearClass = () => { 
+    for (let i = 0; i < word.length; i++) {
+        for (let j = 0; j < word[i].length; j++) {
+            let letter;
+            j == 0 ? letter = 'a' : j == 1 ? letter = 'b' : j == 2 ? letter = 'c' : j == 3 ? letter = 'd': j = 4;
+            for (let k = 0; k < word[i][j].length; k++) {
+                let id = `${letter}${k+1}`;
+                document.getElementById(id).classList.add("border-opacity-rgba");
+                document.getElementById(id).classList.remove("bg-rich-black", "shadow-inner", "border-infra-red", "text-infra-red", "text-gold", "text-caribbean-green");
+                document.getElementById(id).innerHTML = "ㅤ";
+            }
+        }
+    }
+}
+
+add_style();
+wordmation();
+
+
+/*
 
 const wordmation = async () => { 
     for (let i = 0; i < word.length; i++) {
@@ -98,20 +173,4 @@ const wordmation = async () => {
     }
 }
 
-const clearClass = () => { 
-    for (let i = 0; i < word.length; i++) {
-        for (let j = 0; j < word[i].length; j++) {
-            let letter;
-            j == 0 ? letter = 'a' : j == 1 ? letter = 'b' : j == 2 ? letter = 'c' : j == 3 ? letter = 'd': j = 4;
-            for (let k = 0; k < word[i][j].length; k++) {
-                let id = `${letter}${k+1}`;
-                document.getElementById(id).classList.add("border-opacity-rgba");
-                document.getElementById(id).classList.remove("bg-rich-black", "shadow-inner", "border-infra-red", "text-infra-red", "text-gold", "text-caribbean-green");
-                document.getElementById(id).innerHTML = "ㅤ";
-            }
-        }
-    }
-}
-
-add_style();
-wordmation();
+*/
