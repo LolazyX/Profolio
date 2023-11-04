@@ -75,9 +75,7 @@ const wordmation = async () => {
                 if (word[i][j][k] != " ") {
                     let id = `${letter}${k+1}`;
                     document.getElementById(id).classList.remove("border-opacity-rgba");
-                    document.getElementById(id).classList.add("shadow-inner");
-                    document.getElementById(id).classList.add("border-infra-red");
-                    document.getElementById(id).classList.add("text-charcoal");
+                    document.getElementById(id).classList.add("bg-rich-black", "shadow-inner", "border-infra-red", "text-charcoal");
                     document.getElementById(id).innerHTML = randomCharecter();
                     await sleep(60)
                     document.getElementById(id).innerHTML = randomCharecter();
@@ -108,11 +106,7 @@ const clearClass = () => {
             for (let k = 0; k < word[i][j].length; k++) {
                 let id = `${letter}${k+1}`;
                 document.getElementById(id).classList.add("border-opacity-rgba");
-                document.getElementById(id).classList.remove("shadow-inner");
-                document.getElementById(id).classList.remove("border-infra-red");
-                document.getElementById(id).classList.remove("text-infra-red");
-                document.getElementById(id).classList.remove("text-gold");
-                document.getElementById(id).classList.remove("text-caribbean-green");
+                document.getElementById(id).classList.remove("bg-rich-black", "shadow-inner", "border-infra-red", "text-infra-red", "text-gold", "text-caribbean-green");
                 document.getElementById(id).innerHTML = "ㅤ";
             }
         }
