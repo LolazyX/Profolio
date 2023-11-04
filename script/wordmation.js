@@ -128,7 +128,7 @@ const clearClass = () => {
             for (let k = 0; k < word[i][j].length; k++) {
                 let id = `${letter}${k+1}`;
                 document.getElementById(id).classList.add("border-opacity-rgba");
-                document.getElementById(id).classList.remove("bg-rich-black", "shadow-inner", "border-infra-red", "text-infra-red", "text-gold", "text-caribbean-green", "medium-purple", "orchid");
+                document.getElementById(id).classList.remove("bg-rich-black", "shadow-inner", "border-infra-red", "text-infra-red", "text-gold", "text-caribbean-green", "text-medium-purple", "text-orchid");
                 document.getElementById(id).innerHTML = "ㅤ";
             }
         }
