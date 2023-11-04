@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#EF476F" />
     <!-- CSS STYLE -->
     <link rel="stylesheet" href="style/style.css" />
     <!-- Google Icons -->
@@ -23,16 +24,16 @@
     <!-- Navbar -->
     <nav id="navbar" class="xl:hidden flex flex-row w-full px-4 py-3 sticky top-0 ">
         <!-- Logo -->
-        <div id="logo" class="flex flex-row justify-center text-sm md:text-xl cursor-default font-bold">
-            <h1 class="text-infra-red">LZX</h1>
+        <div id="logo-navbar" class="flex flex-row justify-center text-sm md:text-xl text-infra-red cursor-default font-bold">
+            <h1>LZX</h1>
         </div>
     </nav>
     <div class=" flex flex-row ">
         <!-- Side Nav -->
         <nav id="sidebar" class="hidden xl:inline-flex flex flex-col item-center pt-8 h-screen w-[5%] fixed bg-dark-jungle-green border-r-2 border-infra-red">
             <!-- Logo -->
-            <div id="logo" class="select-none flex flex-row justify-center text-2xl cursor-default font-bold">
-                <h1 class="text-infra-red">LZX</h1>
+            <div id="logo-sidebar" class="select-none flex flex-row justify-center text-2xl text-infra-red cursor-default font-bold ">
+                <h1>LZX</h1>
             </div>
             <!-- Menu -->
             <div id="menu" class="flex items-end justify-center pb-4 h-full text-center">
@@ -67,7 +68,7 @@
                 </div>
                 <div class="flex flex-col">
                     <div>
-                        <div class="mt-6 md:mt-14 xl:mt-8 mb-12 p-4  flex justify-center">
+                        <div id="title-page" class="mt-4 md:mt-14 xl:mt-8 mb-12 px-4 pb-4 p-2  flex justify-center">
                             <h1 class="text-md md:text-xl xl:text-2xl font-semibold">
                                 Let's play!
                             </h1>
@@ -174,7 +175,8 @@
         </main>
     </div>
 </body>
-
+    <!-- App Script -->
+    <script src="script/app.js"></script>
     <!-- Text Script -->
     <script src="script/wordmation.js"></script>
 </html>
