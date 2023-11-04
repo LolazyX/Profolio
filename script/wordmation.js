@@ -50,7 +50,7 @@ const randomCharecter = () => {
 }
 
 const randomColor = () => {
-    const color = ['infra-red', 'gold', 'caribbean-green'];
+    const color = ['gold', 'caribbean-green'];
     let result = color[Math.floor((Math.random()*color.length))];
     return result;
 }
