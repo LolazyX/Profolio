@@ -94,7 +94,7 @@ const wordmation = async () => {
                     document.getElementById(id).classList.remove("border-opacity-rgba");
                     document.getElementById(id).classList.add("bg-rich-black", "shadow-inner", "border-infra-red", "text-dark-jungle-green");
                     waitRamdom(id, word[i][j][k]);
-                    await sleep(20);
+                    await sleep(30);
                 }
             }
         }
@@ -110,11 +110,11 @@ const wordmation = async () => {
                         document.getElementById(id).classList.add(color);
                     }
                     document.getElementById(id).innerHTML = word[i][j][k];
-                    await sleep(40)
+                    await sleep(50)
                 }
             }
         }
-        await sleep(8000);
+        await sleep(10000);
         clearClass();
         if ( i == (word.length - 1) ) i = -1;
     }
