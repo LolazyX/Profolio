@@ -8,11 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (title_pageRect.top <= 0) {
                 logo.classList.remove('text-infra-red');
                 logo.classList.add('text-white')
-                navbar.classList.add('bg-infra-red');
+                navbar.classList.add('bg-rich-black');
+                navbar.classList.add('border-b')
+                navbar.classList.add('border-infra-red')
             } else {
                 logo.classList.add('text-infra-red');
                 logo.classList.remove('text-white')
-                navbar.classList.remove('bg-infra-red');
+                navbar.classList.remove('bg-rich-black');
+                navbar.classList.remove('border-b')
+                navbar.classList.remove('border-infra-red')
             }
         }
     })
