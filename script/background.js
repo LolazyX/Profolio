@@ -16,4 +16,4 @@ const liners = () => {
 
 setInterval(() => {
     liners();
-}, 1000);
+}, 500);
