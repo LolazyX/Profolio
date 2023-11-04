@@ -55,26 +55,18 @@ const randomColor = () => {
     return result;
 }
 
-const clearClass = () => { 
-    for (let i = 0; i < word.length; i++) {
-        for (let j = 0; j < word[i].length; j++) {
-            let letter;
-            j == 0 ? letter = 'a' : j == 1 ? letter = 'b' : j == 2 ? letter = 'c' : j == 3 ? letter = 'd': j = 4;
-            for (let k = 0; k < word[i][j].length; k++) {
-                let id = `${letter}${k+1}`;
-                document.getElementById(id).classList.add("border-opacity-rgba");
-                document.getElementById(id).classList.remove("shadow-inner");
-                document.getElementById(id).classList.remove("border-infra-red");
-                document.getElementById(id).classList.remove("text-infra-red");
-                document.getElementById(id).classList.remove("text-gold");
-                document.getElementById(id).classList.remove("text-caribbean-green");
-                document.getElementById(id).innerHTML = "ㅤ";
-            }
+const add_style = () => {
+    letter = ['a', 'b', 'c', 'd']
+    letter.forEach(element => {
+        for (let i = 0; i < 13; i++) {
+            let id = `${element}${i+1}`;
+            //console.log(id)
+            document.getElementById(id).classList.add('p-2', 'w-6', 'md:p-3', 'md:w-14', 'xl:p-6', 'xl:w-20', 'border', 'lg:border-2', 'border-opacity-rgba');
         }
-    }
+    });
 }
 
-const looptest = async () => { 
+const wordmation = async () => { 
     for (let i = 0; i < word.length; i++) {
         for (let j = 0; j < word[i].length; j++) {
             let letter;
@@ -108,4 +100,24 @@ const looptest = async () => {
     }
 }
 
-looptest();
+const clearClass = () => { 
+    for (let i = 0; i < word.length; i++) {
+        for (let j = 0; j < word[i].length; j++) {
+            let letter;
+            j == 0 ? letter = 'a' : j == 1 ? letter = 'b' : j == 2 ? letter = 'c' : j == 3 ? letter = 'd': j = 4;
+            for (let k = 0; k < word[i][j].length; k++) {
+                let id = `${letter}${k+1}`;
+                document.getElementById(id).classList.add("border-opacity-rgba");
+                document.getElementById(id).classList.remove("shadow-inner");
+                document.getElementById(id).classList.remove("border-infra-red");
+                document.getElementById(id).classList.remove("text-infra-red");
+                document.getElementById(id).classList.remove("text-gold");
+                document.getElementById(id).classList.remove("text-caribbean-green");
+                document.getElementById(id).innerHTML = "ㅤ";
+            }
+        }
+    }
+}
+
+add_style();
+wordmation();
