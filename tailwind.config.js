@@ -14,6 +14,8 @@ tailwind.config = {
                 'lavender-gray' : '#BFC7D2',
                 'crayola': '#A6AEB9',
                 'space-light': '#536878',
+                'medium-purple': '#9376E0',
+                'orchid': '#E893CF',
                 'opacity-rgba': 'rgba(0, 0, 0, 0)'
             },
             fontFamily: {

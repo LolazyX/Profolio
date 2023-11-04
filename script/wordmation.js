@@ -54,7 +54,7 @@ const randomCharecter = (noRandom) => {
 }
 
 const randomColor = () => {
-    const color = ['gold', 'caribbean-green'];
+    const color = ['gold', 'caribbean-green', 'medium-purple', 'orchid'];
     let result = color[Math.floor((Math.random()*color.length))];
     return result;
 }
@@ -76,7 +76,7 @@ const waitRamdom = (id, noRandom) => {
         while ( element != noRandom ) {
             element = document.getElementById(id).innerText
             document.getElementById(id).innerHTML = randomCharecter(noRandom);
-            await sleep(50)
+            await sleep(120)
         }
         document.getElementById(id).innerHTML = noRandom;
  
@@ -92,9 +92,9 @@ const wordmation = async () => {
                 if (word[i][j][k] != " ") {
                     let id = `${letter}${k+1}`;
                     document.getElementById(id).classList.remove("border-opacity-rgba");
-                    document.getElementById(id).classList.add("bg-rich-black", "shadow-inner", "border-infra-red", "text-dark-jungle-green");
+                    document.getElementById(id).classList.add("bg-rich-black", "shadow-inner", "border-infra-red", "text-charcoal");
                     waitRamdom(id, word[i][j][k]);
-                    await sleep(30);
+                    await sleep(15);
                 }
             }
         }
@@ -104,7 +104,7 @@ const wordmation = async () => {
             for (let k = 0; k < word[i][j].length; k++) {
                 if (word[i][j][k] != " ") {
                     let id = `${letter}${k+1}`;
-                    document.getElementById(id).classList.remove("text-dark-jungle-green");
+                    document.getElementById(id).classList.remove("text-charcoal");
                     if (word[i][j][k] == "▶" || word[i][j][k] == "!" || word[i][j][k] == "X" || word[i][j][k] == "★" || word[i][j][k] == "●") {
                         let color = `text-${randomColor()}`;
                         document.getElementById(id).classList.add(color);
@@ -128,7 +128,7 @@ const clearClass = () => {
             for (let k = 0; k < word[i][j].length; k++) {
                 let id = `${letter}${k+1}`;
                 document.getElementById(id).classList.add("border-opacity-rgba");
-                document.getElementById(id).classList.remove("bg-rich-black", "shadow-inner", "border-infra-red", "text-infra-red", "text-gold", "text-caribbean-green");
+                document.getElementById(id).classList.remove("bg-rich-black", "shadow-inner", "border-infra-red", "text-infra-red", "text-gold", "text-caribbean-green", "medium-purple", "orchid");
                 document.getElementById(id).innerHTML = "ㅤ";
             }
         }
