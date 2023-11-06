@@ -22,7 +22,7 @@
 </head>
 <body id="start" class="bg-rich-black bg-gradient-to-t from-infra-red to-rich-black font-kanit">
     <!-- Navbar -->
-    <nav id="navbar" class="xl:hidden flex flex-row w-full px-4 py-3 sticky top-0 ">
+    <nav id="navbar" class="md:hidden xl:hidden flex flex-row w-full px-4 py-3 sticky top-0 ">
         <!-- Logo -->
         <div id="logo-navbar" class="select-none flex flex-row justify-center text-sm md:text-xl text-infra-red cursor-default font-bold">
             <h1>LZX</h1>
@@ -30,7 +30,7 @@
     </nav>
     <div class=" flex flex-row ">
         <!-- Side Nav -->
-        <nav id="sidebar" class="z-50 hidden xl:inline-flex flex flex-col item-center pt-8 h-screen w-[5%] fixed bg-rich-black border-r-2 border-infra-red">
+        <nav id="sidebar" class="z-50 hidden md:inline-flex xl:inline-flex flex flex-col item-center pt-8  h-screen w-[5%] fixed bg-rich-black border-r-2 border-infra-red">
             <!-- Logo -->
             <div id="logo-sidebar" class="select-none flex flex-row justify-center text-2xl text-infra-red cursor-default font-bold ">
                 <h1>LZX</h1>
@@ -49,26 +49,28 @@
             </div>
         </nav>
         <!-- Content -->
-        <main id="content" class="flex flex-col pt-8 px-4 md:px-12 xl:pr-[4%] xl:pl-[8%] w-full text-lavender-gray">
-            <div id="home" class="flex flex-col gap-x-2 h-screen md:h-[50vh] xl:h-screen">
-                <div class="hidden xl:inline-flex flex justify-end space-x-2">
-                    <a href="#introducing">
-                        <button class="py-3 bg-rich-black px-8 border-2 border-infra-red rounded-3xl duration-300 shadow-md shadow-rich-black hover:border-white  hover:bg-dark-jungle-green">
-                            Explore
-                        </button>
-                    </a>
-                    <a href="https://github.com/LolazyX" target="_blank">
-                        <button class="group flex items-center text-rich-black py-3 bg-infra-red px-8 border-2 border-infra-red rounded-3xl duration-300 shadow-md shadow-rich-black hover:border-white hover:bg-white ">
-                            Github
-                            <i class="material-icons text-rich-black ml-2 text-md group-hover:translate-x-2 duration-300">
-                                keyboard_double_arrow_right
-                            </i>
-                        </button>
-                    </a>
-                </div>
+        <main id="content" class="grid px-4 md:pr-[4%] md:pl-[8%] xl:pr-[4%] xl:pl-[8%] w-full text-lavender-gray">
+            <!-- Menu button from xl -->
+            <div class="hidden md:inline-flex xl:inline-flex pt-8 flex justify-end space-x-2">
+                <a href="#introducing">
+                    <button class="py-3 bg-rich-black px-8 border-2 border-infra-red rounded-3xl duration-300 shadow-md shadow-rich-black hover:border-white  hover:bg-dark-jungle-green">
+                        Explore
+                    </button>
+                </a>
+                <a href="https://github.com/LolazyX" target="_blank">
+                    <button class="group flex items-center text-rich-black py-3 bg-infra-red px-8 border-2 border-infra-red rounded-3xl duration-300 shadow-md shadow-rich-black hover:border-white hover:bg-white ">
+                        Github
+                        <i class="material-icons text-rich-black ml-2 text-md group-hover:translate-x-2 duration-300">
+                            keyboard_double_arrow_right
+                        </i>
+                    </button>
+                </a>
+            </div>
+            <!-- Home Page -->
+            <div id="home" class="grid content-center h-screen">
                 <div class="flex flex-col">
                     <div>
-                        <div id="title-page" class="mt-4 md:mt-14 xl:mt-8 mb-12 px-4 pb-4 p-2  flex justify-center">
+                        <div id="title-page" class="mb-12 px-4 p-2  flex justify-center">
                             <h1 class="text-md md:text-xl xl:text-2xl font-semibold">
                                 Let's play!
                             </h1>
@@ -137,7 +139,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="xl:hidden pt-16 md:pt-26 grid grid-cols-2 mt-2 gap-2">
+                        <div class="md:hidden xl:hidden pt-16 md:pt-26 grid grid-cols-2 mt-2 gap-2">
                             <a href="#introducing">
                                 <button class="text-md md:text-xl xl:text-2xl flex justify-center py-2 w-full md:w-3/4 md:ml-[25%] bg-rich-black px-8 border-2 border-infra-red rounded-3xl duration-300 shadow-md shadow-rich-black hover:border-white  hover:bg-dark-jungle-green">
                                     Explore
@@ -154,7 +156,7 @@
                         </div>
                         <div class="-z-50 flex justify-center pt-12 md:pt-20 xl:pt-12">
                             <a href="#introducing">
-                                <i class="material-icons xl:animate-bounce  text-infra-red hover:text-white duration-300 text-4xl cursor-pointer">
+                                <i class="material-icons md:animate-bounce  xl:animate-bounce  text-infra-red hover:text-white duration-300 text-4xl cursor-pointer">
                                     keyboard_double_arrow_down
                                 </i>
                             </a>
@@ -162,20 +164,11 @@
                     </div>
                 </div>
             </div>
-            <div id="introducing" class="grid h-screen md:h-[50vh] xl:h-screen -z-50">
-                <div class="grid md:grid-cols-2 xl:grid-cols-[30%_70%] drop-shadow-2xl">
-                    <div class="md:my-14 xl:my-8 p-8 h-fit md:h-fit xl:h-[60%] grid grid-cols-2  bg-rich-black border-t-2 border-l-2 border-b-2 border-infra-red rounded-l-lg">
-                        <div class="flex justify-start md:justify-center xl:md:justify-center">
-                            <img src="img/img_me.jpg" alt="profile" class="rounded-full w-32 h-32 md:w-2/3 md:h-2/3 xl:w-4/5 xl:h-4/5">
-                        </div>
-                        <div class="flex justify-center">
-                            <h1>Siwakorn Sosanui</h1>
-                        </div>
-                    </div>
-                    <div class="md:my-14 xl:my-8 bg-rich-black border-t-2 border-r-2 border-b-2 border-l-2 border-infra-red rounded-r-lg rounded-bl-lg">
-                        
-                    </div>
-                </div>
+            <!-- Introduce Page -->
+            <div id="introducing" class="grid md:grid-cols-3 xl:grid-cols-3 h-screen -z-30 p-8 gap-x-8">
+                <div class="flex">123</div>
+                <div class="flex">456</div>
+                <div class="flex">789</div>
             </div>
             <div class="grid h-screen md:h-[50vh] xl:h-screen">
                 <div class="grid md:grid-cols-2 xl:grid-cols-2 gap-4 md:gap-8">
